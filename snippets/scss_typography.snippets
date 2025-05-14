@@ -1,0 +1,43 @@
+snippet get-type-style
+abbr Get a defined type style definition.
+	kib-typography.get-type-style(${1:name}, ${2:alternate})
+
+snippet get-type-style-property
+abbr Get a defined type style property definition.
+	kib-typography.get-type-style-property(${1:name}, ${2:property})
+
+snippet get-font-family
+abbr Get a defined font family stack.
+	kib-typography.get-font-family(${1:name})
+
+snippet get-type-weight
+abbr Get a defined type weight.
+	kib-typography.get-type-weight(${1:name})
+
+snippet style-as-type
+abbr Generate style properties from a defined type style.
+regexp '@include'
+	kib-typography.style-as-type(${1:name}, ${2:alternate}) {
+		${0}
+	}
+
+snippet type-weight
+abbr Generate style properties from a defined type weight.
+regexp '@include'
+	kib-typography.type-weight(${1:name}) {
+		${0}
+	}
+
+snippet type-spacing
+abbr Generate common style properties for type spacing.
+regexp '@include'
+	kib-typography.type-spacing(${1:heading}) {
+		${0}
+	}
+
+snippet create-type-helpers
+abbr Generates a set of helper class for each type style.
+regexp '@include'
+	kib-typography.create-type-helpers(${1:prefix}) {
+		${0}
+	}

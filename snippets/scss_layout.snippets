@@ -1,0 +1,41 @@
+snippet get-map-by-key-safe
+abbr Wrapper function for map.get with error handling.
+	kib-layout.get-map-by-key-safe(${1:map}, ${2:key}, ${3:error-key})
+
+snippet get-breakpoint-sizes
+abbr Returns a list of all breakpoint sizes.
+	kib-layout.get-breakpoint-sizes
+
+snippet get-next-breakpoint-size
+abbr Returns the next named breakpoint.
+	kib-layout.get-next-breakpoint-size(${1:size})
+
+snippet get-breakpoint-min
+abbr Returns the minimum width of the breakpoint boundary.
+	kib-layout.get-breakpoint-min(${1:size})
+
+snippet get-breakpoint-max
+abbr Returns the maximum width of the breakpoint boundary.
+	kib-layout.get-breakpoint-max(${1:size})
+
+snippet get-formatted-breakpoint-size
+abbr Formats the raw breakpoint size.
+	kib-layout.get-formatted-breakpoint-size(${1:value})
+
+snippet get-root-size
+abbr Returns the named breakpoint regardless of query modifiers.
+	kib-layout.get-root-size(${1:query})
+
+snippet media-query-simple
+abbr Wraps styles in a media query with a min-width and/or max-width.
+regexp '@include'
+	kib-layout.media-query-simple(${1:min}, ${2:max}) {
+		${0}
+	}
+
+snippet layout-media-query
+abbr Wraps styles in a media query using named breakpoints or a custom query.
+regexp '@include'
+	kib-layout.media-query(${1:query}, ${2:custom}) {
+		${0}
+	}

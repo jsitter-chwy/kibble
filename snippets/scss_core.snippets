@@ -1,0 +1,231 @@
+snippet dialog-zindex-set-bootstrap
+abbr Store the z-index values for dialog
+	kib-core-dialog-zindex-set-bootstrap
+
+snippet drawer-zindex-set-bootstrap
+abbr Store the z-index values for drawer
+	kib-core-drawer-zindex-set-bootstrap
+
+snippet toast-zindex-set-bootstrap
+abbr Store the z-index value for toast
+	kib-core-toast-zindex-set-bootstrap
+
+snippet register
+abbr Register a bootstrapable component.
+	kib-core-register(${1:name})
+
+snippet get
+abbr Get a specific theme data.
+	kib-core-get(${1:selectors})
+
+snippet box-sizing
+abbr Set box sizing to include padding and borders in the dimensions of an
+regexp '@include'
+	kib-core-box-sizing
+
+snippet box-sizing-reset
+abbr Reset element box sising to default.
+regexp '@include'
+	kib-core-box-sizing-reset
+
+snippet clearfix
+abbr Ensure an element's bottom edge clears all of its content.
+regexp '@include'
+	kib-core-clearfix
+
+snippet clearfix-reset
+abbr Disable a previously added clearfix.
+regexp '@include'
+	kib-core-clearfix-reset
+
+snippet container
+abbr Add common styles between card containers and rows
+regexp '@include'
+	kib-core-container(${1:padding}, ${2:padding}) {
+		${0}
+	}
+
+snippet dropshadow
+abbr Apply a dropshadow preset to an element.
+regexp '@include'
+	kib-core-dropshadow(${1:preset}, ${2:inset}) {
+		${0}
+	}
+
+snippet fontface
+abbr Define a new webfont
+regexp '@include'
+	kib-core-fontface(${1:family}, ${2:name}, ${3:weight}, ${4:style}, ${5:path}) {
+		${0}
+	}
+
+snippet core-media-query
+abbr Wrap styles in a media query using a preset definition.
+regexp '@include'
+	kib-core-media-query(${1:preset}, ${2:extend}) {
+		${0}
+	}
+
+snippet overflow
+abbr Apply overflow properties to an element.
+regexp '@include'
+	kib-core-overflow(${1:type}, ${2:direction}) {
+		${0}
+	}
+
+snippet overflow-reset
+abbr Reset a scroll lock on an element to default behavior.
+regexp '@include'
+	kib-core-overflow-reset
+
+snippet scroll-shadow
+abbr Add scroll shadows to an element.
+regexp '@include'
+	kib-core-scroll-shadow(${1:background}) {
+		${0}
+	}
+
+snippet spacing
+abbr Set padding or margin on an element.
+regexp '@include'
+	kib-core-spacing(${1:type}, ${2:size}, ${3:direction}) {
+		${0}
+	}
+
+snippet supports-flex
+abbr Declare styles for modern browsers that support flexbox.
+regexp '@include'
+	kib-core-supports-flex
+
+snippet supports-flex-legacy
+abbr Declare fallback styles for legacy browsers that do not support flexbox.
+regexp '@include'
+	kib-core-supports-flex-legacy
+
+snippet supports-reset
+abbr Declare styles to reset legacy defaults for flexbox supporting browsers.
+regexp '@include'
+	kib-core-supports-reset
+
+snippet visually-hidden
+abbr Hide text an element visually, but still allow screen readers to read it.
+regexp '@include'
+	kib-core-visually-hidden
+
+snippet visually-hidden-reset
+abbr Reset visibly hidden text.
+regexp '@include'
+	kib-core-visually-hidden-reset
+
+snippet set
+abbr Add a value to the dimensions store.
+	kib-core-set(${1:name}, ${2:value})
+
+snippet exists
+abbr Check if a placeholder exists.
+	kib-core-exists(${1:name})
+
+snippet breakpoints-convert
+abbr Make sure all registered breakpoints are formatted to rem units.
+	kib-core-breakpoints-convert
+
+snippet breakpoints-set
+abbr Make sure all registered breakpoints are formatted to rem units.
+	kib-core-breakpoints-set(${1:values})
+
+snippet extend
+abbr Extend an existing query definition.
+	kib-core-extend(${1:name}, ${2:preset}, ${3:query})
+
+snippet increment-set
+abbr Set a `z-index` incremented from an existing values.
+	kib-core-increment-set(${1:name}, ${2:preset}, ${3:increment})
+
+snippet whole-pixel
+abbr Calculate a factor that results in whole pixel units when compared a base
+	kib-core-whole-pixel(${1:factor}, ${2:base})
+
+snippet strip-unit
+abbr Remove the unit of a length
+	kib-core-strip-unit(${1:number})
+
+snippet px-to-relative
+abbr Convert a number using pixel units to a comparable relative unit value.
+	kib-core-px-to-relative(${1:px}, ${2:base}, ${3:inline})
+
+snippet encode-color
+abbr Replace the `#` in a color with its encoding, `%23`.
+	kib-core-encode-color(${1:color})
+
+snippet str-replace
+abbr Replace instances of a substring
+	kib-core-str-replace(${1:string}, ${2:search}, ${3:replace})
+
+snippet svg-encode
+abbr Encode an inline SVG element so that it works with legacy browsers.
+	kib-core-svg-encode(${1:svg})
+
+snippet svg-base64-encode
+abbr Encode an inline base64 SVG element so that it works with legacy browsers.
+	kib-core-svg-base64-encode(${1:svg})
+
+snippet map-deep-get
+abbr Map deep get
+	kib-core-map-deep-get(${1:map}, ${2:keys})
+
+snippet map-deep-set
+abbr Deep set function to set a value in nested maps
+	kib-core-map-deep-set(${1:map}, ${2:keys}, ${3:value})
+
+snippet get-type-size
+abbr Get a type size definition from `$kib-type-sizes`.
+	kib-core-get-type-size(${1:definition})
+
+snippet get-type-property
+abbr Get the property from a type size definition.
+	kib-core-get-type-property(${1:definition}, ${2:property}, ${3:options})
+
+snippet type-line-height
+abbr Calculate line height of a type size definition.
+	kib-core-type-line-height(${1:definition})
+
+snippet type-baseline-distance
+abbr Calculte the distance to the baseline of a text definition.
+	kib-core-type-baseline-distance(${1:definition})
+
+snippet type-block-space-bottom
+abbr Calculate spacing below a block element of a text size.
+	kib-core-type-block-space-bottom(${1:definition})
+
+snippet type-block-adjust-top
+abbr Calculate spacing above a block element of a text size.
+	kib-core-type-block-adjust-top(${1:definition})
+
+snippet type-whole-pixel-factor
+abbr Calculate a factor that results in whole pixel units when compared a base
+	kib-core-type-whole-pixel-factor(${1:factor}, ${2:base})
+
+snippet type-strip-unit
+abbr Remove the unit of a length
+	kib-core-type-strip-unit(${1:number})
+
+snippet add-block-margins
+abbr Add margins to a block style element.
+regexp '@include'
+	kib-core-add-block-margins(${1:definition}) {
+		${0}
+	}
+
+snippet size-inline-element
+abbr Generate styles for an inline element.
+regexp '@include'
+	kib-core-size-inline-element(${1:definition}) {
+		${0}
+	}
+
+snippet size-block-element
+abbr Generate styles for a block element.
+regexp '@include'
+	kib-core-size-block-element(${1:definition}) {
+		${0}
+	}
